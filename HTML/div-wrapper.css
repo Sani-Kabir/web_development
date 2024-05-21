@@ -1,0 +1,113 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: blue;
+}
+
+.wrapper{
+
+position: absolute;
+transform: translate(-50% , -50%);
+top: 50%;
+left: 50%;
+background-color: white;
+width: 500px;
+padding: 3em;
+border-radius: 1em;
+perspective: 800px;
+
+}
+
+.credit-card{
+    position: relative;
+    width: 350px;
+    margin: auto;
+    height: 220px;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+}
+
+.card-front{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: red;
+    border-radius: 1em;
+    backface-visibility: hidden;
+    padding: 2em 1em;
+}
+.branding{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.branding img{
+    width: 50px;
+    height: auto;
+}
+.card-number{
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    margin-top: 3em;
+}
+.details{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    font-size: 0.8em;
+}
+
+.details span{
+    display: block;
+}
+
+.details #card-holder-name{
+    text-transform: uppercase;
+}
+
+form{
+
+    margin-top: 2em;
+   
+}
+
+label ,input{
+    display: block;
+}
+
+label{
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em 0.5em;
+}
+
+input:not(.last-child){
+    margin-bottom: 1em;
+}
+
+form .date-cvv{
+
+    display: flex;
+    justify-content: space-between;
+}
